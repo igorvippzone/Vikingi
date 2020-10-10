@@ -59,6 +59,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
+	color: inherit;
 }
 a:hover {
 	text-decoration: none;
@@ -82,3 +83,63 @@ h6 {
 :root {
 	--color__site: #ff9900;
 }
+body {
+	color: #fff;
+	background-color: #0e0e0e;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/* header */
+.header {
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 50px;
+	height: 100vh;
+	text-align: center;
+	position: relative;
+}
+
+.header::after {
+	content: "";
+	position: absolute;
+	height: 70px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(180deg, #0e0e0e 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+	transform: rotate(180deg);
+}
+
+.menu__list {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 58px;
+	background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+}
+
+.menu__list-item {
+	padding: 0 13px;
+}
+
+.menu__list-link {
+	font-size: 36px;
+	line-height: 42px;
+}
+.menu__list-link:hover,
+.menu__list-link:focus {
+	color: #85ccdc;
+	text-decoration: underline;
+}
+.logo {
+	padding-top: 178px;
+}
+/* /header */
